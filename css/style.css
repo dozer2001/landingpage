@@ -80,7 +80,7 @@ blockquote span{
 }
 .btn{
 	letter-spacing: .2em;
-	padding:10px 40px;
+	padding:10px 30px;
 	border:none;
 	text-transform: uppercase;
 	border-radius: 2px;
@@ -125,6 +125,7 @@ textarea.form-control{
 }*/
 .navbar-toggle{
 	margin: 0;
+	right: -40px;
 }
 .navbar-toggle .icon-bar{
 	background-color: #fff;
@@ -187,6 +188,30 @@ textarea.form-control{
 /* HEADER STYLE END */
 
 /* MAIN STYLE START */
+.control-down{
+	left:0;
+	right: 60px;
+	bottom: 30px;
+	top: 90%;
+	position: absolute;
+	margin-bottom: 20px;
+}
+.control-down::before{
+	content:'';
+	display: block;
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	background-color: #fff;
+	left: 50%;
+	transform:translateX(-50%) rotate(45deg);
+}
+.control-down i.fa{
+	position: relative;
+	font-size: 18px;
+	transform: translateY(40%);
+	color: #3d3d3d;
+}
 .inner::before{
     content: '';
     display: inline-block;
@@ -222,11 +247,20 @@ textarea.form-control{
 		padding-top: 200px;
 		padding-bottom: 200px;
 	}
+	.control-down{
+		top: 84%;
+	}
 }
-@media (max-width: 991px){
+@media (max-width: 999px){
 	.inner-content h6{
-		font-size: 22px;
+		font-size: 20px;
 		margin-bottom: 50px;
+	}
+	.inner-content span{
+		font-size: 12px;
+	}
+	.control-down{
+		top: 73%;
 	}
 }
 
@@ -415,6 +449,11 @@ textarea.form-control{
 .img-section img{
  padding-bottom: 6px;
 }
+@media (max-width: 799px){
+	.portfolio-content p{
+		padding: 15px;
+	}
+}
 @media (max-width: 600px){
  	.portfolio-tabs .nav-tabs li+li{
  		 margin-left: 30px;
@@ -425,15 +464,16 @@ textarea.form-control{
 	.portfolio-tabs .nav-tabs{
 		 margin-left: 20px;
 	}
-	.portfolio-tabs .nav-tabs>li{
-		width: 33%;
+	.portfolio-tabs .nav-tabs li{
+		width: 50%;
+		margin: 15px 0 0 0;
+	}
+	.portfolio-tabs .nav-tabs li+li{
+		width: 50%;
+		margin: 15px 0 0 0;
 	}
 }
-@media (max-width: 399px){
-	.portfolio-tabs .nav-tabs>li{
-		width: auto;
-	}
-}
+
 
 /* PORTFOLIO END */
 
@@ -613,14 +653,24 @@ textarea.form-control{
 	.new-section-btn{
 		margin-bottom: 20px;
 	}
+	.news-text{
+		text-align: center;
+	}
+	.new-section-btn{
+		text-align: center;
+	}
+	.new-section-img{
+		text-align: center;
+	}
 }
+
 
 /* LATEST NEWS END */
 /* CONTACKT START */
 .subscribe .title{
 	margin-bottom: 15px;
 }
-.subscribe input(name="userEmail"){
+.subscribe input[name="userEmail"]{
 	width: 293px;
 	margin-right: 3px;
 }
@@ -685,6 +735,21 @@ textarea.form-control{
     float: left;
     padding-left: 20px;
 }
+@media (max-width: 799px){
+	.form-group input[name="userEmail"]{
+		width: 100%;
+	}
+}
+@media (max-width: 799px){
+	.contact-item-icon{
+		font-size: 16px;
+		height: 18px;
+		width: 18px;
+	}
+	.contact-item-icon i{
+		font-size: 13px;
+	}
+}
 @media(max-width: 499px){
 	.form-col .btn{
 		 padding-top: 10px;
@@ -730,12 +795,16 @@ textarea.form-control{
 	letter-spacing: 0.3em;
     color: rgba(255, 255, 255, .75);
     display: block;
-    font-size: 20px;
+    font-size: 16px;
 }
 .on-map-icon i{
 	color: #000;
 	font-size: 20px;
 	transform: rotate(-45deg)
+}
+.on-map-icon span i{
+	transform: rotate(0deg);
+	color: #fff;
 }
 .on-map-icon{
   	display: inline-block;
@@ -770,36 +839,45 @@ textarea.form-control{
 	font-size: 27px;
 }
 .footer-item-icon{
-	width: 30px;
+	width: 23px;
 	/*background-color: #000;*/
 	float: left;
 	/*color: #fff;*/
-	font-size: 16px;
+	font-size: 11px;
 	text-align: center;
-	line-height: 30px;
+	line-height: 21px;
 	transform: rotate( 45deg);
     border-radius: 5px;
     margin-left: 20px;
     border: 1px solid
 }
 .footer-item-icon i{
-	font-size: 15px;
+	font-size: 12px;
     transform: rotate(-45deg);
 }
 .footer-bot{
 	text-align: center;
 	text-transform: uppercase;
-	margin-top: 60px
+	margin: 60px;
 	
 }
 .footer-bot .foot-last{
 	display: block;
 	margin-top: 20px;
 	text-transform: none;
+	color: #999999;
+	font-size: 11px;
+	font-family: 'Regular', sans-serif;
+}
+.footer-bot span{
+	font-size: 10px;
+	color: #999999;
 }
 .footer-bot i{
 	letter-spacing: 0.4em;
 	padding-left: 15px;
+	font-size: 12px;
+	font-family: "Regular";
 }
 .footer-icon li{
 	display: inline-block;

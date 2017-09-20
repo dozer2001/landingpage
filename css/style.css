@@ -112,12 +112,12 @@ blockquote span{
 	color: #777;
 	box-shadow: none;
 }
-.form-control::focus{
-	border-color: #fbbebe; 
+.form-control:focus{
+	border-color: #111111;
 	box-shadow: none;
 }
 textarea.form-control{
-	min-height: 90px;
+	min-height: 95px;
 }
 /*.form-group{
 	padding-bottom: 10px;
@@ -189,12 +189,10 @@ textarea.form-control{
 
 /* MAIN STYLE START */
 .control-down{
-	left:0;
-	right: 60px;
+	left: 50%;
 	bottom: 30px;
-	top: 90%;
 	position: absolute;
-	margin-bottom: 20px;
+	transform: translateX(-50%);
 }
 .control-down::before{
 	content:'';
@@ -248,7 +246,7 @@ textarea.form-control{
 		padding-bottom: 200px;
 	}
 	.control-down{
-		top: 84%;
+		top: 79%;
 	}
 }
 @media (max-width: 999px){
@@ -259,10 +257,7 @@ textarea.form-control{
 	.inner-content span{
 		font-size: 12px;
 	}
-	.control-down{
-		top: 73%;
-		right: 20px;
-	}
+
 }
 
 /* ABOUT STUDIO START */
@@ -358,7 +353,7 @@ textarea.form-control{
 	font-size: 14px;
 	letter-spacing: .4em;
 	color: #111;
-	margin-top: 35px;
+
 }
 .nav-tabs li .icon{
 	font-size: 48px;
@@ -428,9 +423,7 @@ textarea.form-control{
 }
 .portfolio-tabs{
 	text-align: center;
-}
-.portfolio-tabs ul{
-	padding-top: 40px;
+	margin-top: 70px;
 }
 .portfolio-tabs .nav-tabs>li{
 	font-size: 13px;
@@ -443,12 +436,15 @@ textarea.form-control{
 	display: inline-block;
 	text-align: center;
 }
-
-.img-section .row{
-	margin: 0;
-}
 .img-section img{
  padding-bottom: 6px;
+	width: 100%;
+}
+.tab-content .img-section .img-section-firs{
+	width: 33%;
+	display: inline-block;
+	text-align: left;
+	padding-left: 10px;
 }
 @media (max-width: 799px){
 	.portfolio-content p{
@@ -481,14 +477,12 @@ textarea.form-control{
 /* START PROJECT */
 .start-project{
 	background-color: #111;
+	padding: 70px 0px;
 }
 .start-project .title{
-	padding-top: 65px;
 	margin-bottom: 20px;
 }
-.start-project .btn-default{
-	margin-bottom: 70px;
-}
+
 /* START PROJECT END */
 
 /* why-choose-us start*/
@@ -518,7 +512,7 @@ textarea.form-control{
 	font-weight: 300;
 	color: #777;
 }
-.text-section .row+.row{
+.why-choose-us .row+.row{
 	margin-top:85px;
 }
 /* why-choose-us end */
@@ -619,6 +613,7 @@ textarea.form-control{
     font-size: 11px;
     color: #999999;
     letter-spacing: 0.6em;
+	margin-top: 5px;
 }
 .news-text h6{
 	font-family: 'Dosis', sans-serif;
@@ -684,6 +679,11 @@ textarea.form-control{
 	margin-top: 23px;
 	color: #aaaaaa;
 }
+.small-icon p {
+	font-size: 11px;
+	font-family: 'FontAwesome';
+	display: inline-block;
+}
 .contact-us form{
 	margin: 0 -5px;
 }
@@ -691,6 +691,7 @@ textarea.form-control{
 	width: 50%;
 	padding: 0 5px;
 	float: left;
+	color: #aaaaaa;
 }
 .form-submit{
 	clear: both;
@@ -698,6 +699,11 @@ textarea.form-control{
 .form-submit .form-col span{
 	margin-top: 23px;
 	color: #aaaaaa;
+}
+.form-submit .form-col p{
+	font-size: 11px;
+	font-family: 'FontAwesome';
+	display: inline-block;
 }
 .contact-area{
 	margin-bottom: 83px;
@@ -719,6 +725,7 @@ textarea.form-control{
     transform: rotate(45deg);
     background-color: #000;
     text-align: center;
+	border-radius: 4px;
 }
 .contact-item i{
 	font-size: 20px;
@@ -732,10 +739,13 @@ textarea.form-control{
     float: left;
     padding-left: 25px;
     padding-right: 25px;
+	font-family: Dosis;
 }
 .contact-number{
     float: left;
     padding-left: 20px;
+	font-family: Dosis;
+	color: #777777;
 }
 @media (max-width: 799px){
 	.form-group input[name="userEmail"]{
@@ -756,7 +766,7 @@ textarea.form-control{
 	.form-col .btn{
 		 padding-top: 10px;
 		 letter-spacing: 0;
-  		 padding: 6px 25px
+  		 padding: 6px 20px
 	}
 }
 /* CONTACKT END */
@@ -801,7 +811,7 @@ textarea.form-control{
 }
 .on-map-icon i{
 	color: #000;
-	font-size: 20px;
+	font-size: 13px;
 	transform: rotate(-45deg)
 }
 .on-map-icon span i{
@@ -812,14 +822,14 @@ textarea.form-control{
   	display: inline-block;
 }
 .on-map-icon-item{
-	width: 30px;
-	height: 30px;
+	width: 29px;
+	height: 29px;
     background-color: #f8f8f8;
     text-align: center;
     transform: rotate( 45deg);
     border-radius: 5px;
-    line-height: 35px;
-    margin-left: 40%;
+    line-height: 32px;
+   display: inline-block;
 }
 
 /* MAP END*/
@@ -841,20 +851,20 @@ textarea.form-control{
 	font-size: 27px;
 }
 .footer-item-icon{
-	width: 23px;
-	/*background-color: #000;*/
+	width: 26px;
+	height: 24px;
 	float: left;
 	/*color: #fff;*/
 	font-size: 11px;
 	text-align: center;
-	line-height: 21px;
+	line-height: 23px;
 	transform: rotate( 45deg);
-    border-radius: 5px;
+    border-radius: 4px;
     margin-left: 20px;
     border: 1px solid
 }
 .footer-item-icon i{
-	font-size: 12px;
+	font-size: 14px;
     transform: rotate(-45deg);
 }
 .footer-bot{
@@ -869,7 +879,7 @@ textarea.form-control{
 	text-transform: none;
 	color: #999999;
 	font-size: 11px;
-	font-family: 'Regular', sans-serif;
+	font-family: 'Dosis', sans-serif;
 }
 .footer-bot span{
 	font-size: 10px;
@@ -879,7 +889,7 @@ textarea.form-control{
 	letter-spacing: 0.4em;
 	padding-left: 15px;
 	font-size: 12px;
-	font-family: "Regular";
+	font-family: "Dosis";
 }
 .footer-icon li{
 	display: inline-block;

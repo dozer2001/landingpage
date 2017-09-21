@@ -93,7 +93,7 @@ blockquote span{
 	background-color: rgba(255, 255, 255, .8);
 }
 .btn.btn-default:hover{
-	background-color: #fff;
+	background-color: #e9ecee;
 }
 .btn.btn-dark{
 	background-color: #323323;
@@ -113,7 +113,7 @@ blockquote span{
 	box-shadow: none;
 }
 .form-control:focus{
-	border-color: #111111;
+	border-color: #c7c8c9;
 	box-shadow: none;
 }
 textarea.form-control{
@@ -353,10 +353,13 @@ textarea.form-control{
 	font-size: 14px;
 	letter-spacing: .4em;
 	color: #111;
-
 }
+
 .nav-tabs li .icon{
 	font-size: 48px;
+}
+.tab-content{
+	overflow: hidden;
 }
 .tab-content .tab-pane{
 	padding-top: 70px;
@@ -437,14 +440,12 @@ textarea.form-control{
 	text-align: center;
 }
 .img-section img{
- padding-bottom: 6px;
 	width: 100%;
+	padding: 4px;
 }
 .tab-content .img-section .img-section-firs{
-	width: 33%;
-	display: inline-block;
-	text-align: left;
-	padding-left: 10px;
+	width: 33.333%;
+	float: left;
 }
 @media (max-width: 799px){
 	.portfolio-content p{
@@ -490,12 +491,15 @@ textarea.form-control{
 .why-choose-us.title{
 	margin-bottom: 87.25px;
 }
+.icon-choose{
+	margin-bottom: 34.5px;
+	margin-top: 20px;
+}
 .icon span{
 	display: block;
 	font-size: 48px;
 	text-align: center;
-	margin-bottom: 34.5px;
-	margin-top: 20px;
+
 }
 .why-choose-us-info h6{
 	font-family: 'Dosis', sans-serif;
@@ -697,7 +701,6 @@ textarea.form-control{
 	clear: both;
 }
 .form-submit .form-col span{
-	margin-top: 23px;
 	color: #aaaaaa;
 }
 .form-submit .form-col p{
@@ -738,14 +741,18 @@ textarea.form-control{
     text-transform: uppercase;
     float: left;
     padding-left: 25px;
-    padding-right: 25px;
-	font-family: Dosis;
+	width: 100%;
+	letter-spacing: .3em
 }
 .contact-number{
     float: left;
     padding-left: 20px;
 	font-family: Dosis;
 	color: #777777;
+	font-size: 15px;
+}
+.contact-item-content{
+	overflow: hidden;
 }
 @media (max-width: 799px){
 	.form-group input[name="userEmail"]{
@@ -753,13 +760,20 @@ textarea.form-control{
 	}
 }
 @media (max-width: 799px){
-	.contact-item-icon{
-		font-size: 16px;
-		height: 18px;
-		width: 18px;
+	/*!*.contact-item-icon{*!*/
+		/*!*font-size: 16px;*!*/
+		/*!*height: 18px;*!*/
+		/*!*width: 18px;*!*/
+	/*!*}*!*/
+	/*.contact-item-icon i{*/
+		/*font-size: 13px;*/
+	/*}*/
+	.contact-item{
+		margin-bottom: 57px;
+		margin-left: 20px;
 	}
-	.contact-item-icon i{
-		font-size: 13px;
+	.contact-content{
+		width: auto;
 	}
 }
 @media(max-width: 499px){
@@ -767,6 +781,10 @@ textarea.form-control{
 		 padding-top: 10px;
 		 letter-spacing: 0;
   		 padding: 6px 20px
+	}
+	.contact-number{
+		padding-left: 13px;
+		font-size: 13px;
 	}
 }
 /* CONTACKT END */
@@ -779,7 +797,7 @@ textarea.form-control{
 .on-map-block::before{
     content: '';
     display: inline-block;
-    height: 125%;
+    height: 100%;
      vertical-align: middle;
     margin-left: -4px;
 }
@@ -820,6 +838,7 @@ textarea.form-control{
 }
 .on-map-icon{
   	display: inline-block;
+	vertical-align: middle;
 }
 .on-map-icon-item{
 	width: 29px;
@@ -852,10 +871,9 @@ textarea.form-control{
 }
 .footer-item-icon{
 	width: 26px;
-	height: 24px;
+	height: 26px;
 	float: left;
-	/*color: #fff;*/
-	font-size: 11px;
+	font-size: 15px;
 	text-align: center;
 	line-height: 23px;
 	transform: rotate( 45deg);
@@ -870,26 +888,24 @@ textarea.form-control{
 .footer-bot{
 	text-align: center;
 	text-transform: uppercase;
-	margin: 60px;
-	
 }
 .footer-bot .foot-last{
-	display: block;
-	margin-top: 20px;
 	text-transform: none;
 	color: #999999;
 	font-size: 11px;
-	font-family: 'Dosis', sans-serif;
 }
-.footer-bot span{
-	font-size: 10px;
-	color: #999999;
+.footer-bot h6{
+	margin-bottom: 16px;
+}
+.footer-bot h6 i{
+	margin-right: 10px;
+	color: #a8a8a8;
 }
 .footer-bot i{
-	letter-spacing: 0.4em;
-	padding-left: 15px;
 	font-size: 12px;
-	font-family: "Dosis";
+}
+.footer-bot h6 span{
+	letter-spacing: 0.4em;
 }
 .footer-icon li{
 	display: inline-block;
